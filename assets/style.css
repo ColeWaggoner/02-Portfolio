@@ -10,6 +10,12 @@ body {
   font-family: sans-serif;
 }
 
+.dec {
+  border-left: 3px solid var(--light); 
+  padding-left: 6px;
+  border-radius: 3px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -32,30 +38,27 @@ header div {
   font-size: 1.8rem;
 }
 
-nav ul {
+header nav ul {
   display: flex;
   justify-content: space-between;
   min-width: 400px;
 }
 
-nav a {
+header nav a {
   color: var(--light);
   text-decoration: none;
-  padding: 4px;
-  border-radius: 3px;
-  border-left: 3px solid var(--blue);
 }
 
 .style:hover {
   transition: all 0.2s ease-in-out;
-  background-color: var(--blue);
+  background-color: var(--light);
   color: black;
   box-shadow: 0 0 10px rgba(187, 187, 187, 0.623);
 }
 
 .about-me {
     width: 90%;
-    height: 400px;
+    height: fit-content;
     margin-top: 50px;
     display: inline-block;
     color: var(--light);
@@ -88,6 +91,7 @@ nav a {
   padding: 10px;
   padding-left: 410px;
   font-size: 20px;
+  line-height: 1.5;
 }
 
 .works {
@@ -147,4 +151,40 @@ nav a {
   color: black;
   font-size: 1.8rem;
   background-color: var(--blue);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+  background-color: rgba(0, 0, 0, 0.63);
+  height: 80px;
+  box-shadow: 0 0 7px rgba(187, 187, 187, 0.623);
+}
+
+footer div {
+  height: 60%;
+  width: 250px;
+  color: var(--light);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+footer nav ul {
+  display: flex;
+  align-items: center;
+  min-width: 400px; 
+  background-color: var(--blue);
+  border-radius: 15px 0 0 15px;
+  padding: 10px;
+  height: 50px;
+  width: 500px;
+}
+
+footer nav a {
+  padding-right: 30px;
+  font-weight: bold;
 }
