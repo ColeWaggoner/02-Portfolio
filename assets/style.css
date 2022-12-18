@@ -237,9 +237,6 @@ footer nav a {
 }
 
 @media screen and (max-width: 992px) {
-  .about-me h2 {
-    background-color: blue;
-  }
 
   .about-me {
     flex-direction: column;
@@ -405,7 +402,6 @@ height: 150px;
 }
 
 .works h2 {
-  background-color: red;
   display: flex;
   width: 100%;
   border-radius: 0;
