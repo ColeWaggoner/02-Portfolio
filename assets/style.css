@@ -60,20 +60,27 @@ header div {
 
 header nav ul {
   justify-content: space-between;
-  min-width: 400px;
 }
 
 header nav a {
   color: var(--light);
   text-decoration: none;
-  padding: 5px;
+  padding: 4px;
+  padding-right: 40px;
+  margin: 2px;
 }
 
-.style:hover {
+.style:not(:focus):hover {
   transition: all 0.2s ease-in-out;
   background-color: var(--light);
   color: black;
   box-shadow: 0 0 10px rgba(187, 187, 187, 0.623);
+  /* border: 3px solid var(--light); */
+}
+
+.style:focus {
+background: none;
+border: none;
 }
 
 .about-me {
@@ -157,9 +164,9 @@ header nav a {
   position: relative;
   width:max-content;
   margin-left:auto;
-  margin-top: -42px;
-  margin-bottom: 16px;
-  padding: 5px;
+  margin-top: -40px;
+  margin-bottom: 15px;
+  padding: 6px;
   border-radius: 15px 0 0 0;
   justify-content: center;
   align-items: center;
@@ -194,7 +201,8 @@ border-radius: 20px 0 0 20px;
   margin-left: auto;
   margin-top: -35px;
   margin-bottom: 16px;
-  padding: 5px;
+  padding: 6px;
+  /* padding-bottom: 6px; */
   border-radius: 15px 0 0 0;
   justify-content: center;
   align-items: center;
@@ -224,11 +232,9 @@ footer div {
 
 footer nav ul {
   align-items: center;
-  min-width: 400px; 
   border-radius: 15px 0 0 15px;
   padding: 10px;
   height: 50px;
-  width: 500px;
 }
 
 footer nav a {
@@ -323,7 +329,6 @@ height: 150px;
   width: 100%;
   margin: 0;
   border-radius: 0 0 20px 20px;
-  margin-top: -32px;
   font-size: 1.2rem;
 }
 }
@@ -355,12 +360,22 @@ height: 150px;
     padding: 8px;
   }
 
-  header ul {
-    margin: 15px;
+  header nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 10px;
   }
 
-  header nav a {
-    margin: 10px;
+  header ul {
+    width: 100%;
+    display: flex;
+  }
+
+  header nav li {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
   }
 
   .about-me {
@@ -378,6 +393,7 @@ height: 150px;
   margin-top: 30px;
   margin-bottom: 30px;
   max-height: 300px;
+  max-width: 100%;
 }
 
 .about-me h2 {
@@ -474,13 +490,18 @@ footer h2 {
 footer nav {
   margin-bottom: 20px;
   width: 100%;
-  
+  border-radius: 0;
 }
 
 footer nav ul{
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   border-radius: 0;
+  min-width: none;
+}
+
+footer nav a {
+font-size: .7rem;
 }
 
 }
