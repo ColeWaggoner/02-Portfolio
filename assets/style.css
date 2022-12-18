@@ -20,8 +20,32 @@ body {
   box-shadow: 0 0 7px rgba(187, 187, 187, 0.623);
 }
 
-header {
+.blue-back {
+  background-color: var(--blue);
+}
+
+.dark-back {
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+.h-f-div {
+  justify-content: center;
   display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  height: 60%;
+  width: 250px;
+}
+
+.flex {
+  display: flex;
+}
+
+.moves {
+  transition: ease all 0.35s;
+}
+
+header {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.63);
@@ -31,18 +55,10 @@ header {
 }
 
 header div {
-  height: 60%;
-  width: 250px;
-  background-color: var(--blue);
-  border-radius: 0 15px 15px 0;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  font-size: 1.8rem;
+  border-radius: 0 20px 20px 0;
 }
 
 header nav ul {
-  display: flex;
   justify-content: space-between;
   min-width: 400px;
 }
@@ -50,7 +66,7 @@ header nav ul {
 header nav a {
   color: var(--light);
   text-decoration: none;
-  padding: 3px;
+  padding: 5px;
 }
 
 .style:hover {
@@ -66,15 +82,14 @@ header nav a {
     margin-top: 50px;
     display: inline-block;
     color: var(--light);
-    background-color: rgba(0, 0, 0, 0.63);
     border-radius: 0 20px 20px 0;
 }
 
 .about-me img {
-  height: 100%;
   max-height: 400px;
   float: left;
   border-radius: 0 20px 20px 0;
+  filter: brightness(.8);
 }
 
 .about-me h2 {
@@ -82,10 +97,8 @@ header nav a {
   color: black;
   height: 60px;
   width: 350px;
-  background-color: var(--blue);
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 20px 20px 0;
   justify-content: center;
-  display: flex;
   align-items: center;
   font-size: 1.8rem;
 }
@@ -98,13 +111,13 @@ header nav a {
 }
 
 .works {
+  display: flex;
   margin-left: 10%;
   width: 90%;
   height: fit-content;
   margin-top: 50px;
   display: inline-block;
   color: var(--light);
-  background-color: rgba(0, 0, 0, 0.63);
   border-radius: 20px 0 0 20px;
 }
 
@@ -115,35 +128,36 @@ header nav a {
   color: black;
   height: 60px;
   width: 22%;
-  background-color: var(--blue);
-  border-radius: 15px 0 0 15px;
+  border-radius: 20px 0 0 20px;
   justify-content: center;
-  display: flex;
   align-items: center;
   font-size: 1.8rem;
 }
 
-.works a {
-  text-decoration: none;
-  margin: 30px 30px 30px 0;
-}
-
-.works img{
+.main {
   height: 200px;
   width: 90%;
+  border-radius: 20px 0 0 20px;
+  margin: 50px;
   margin-left: 10%;
-  opacity: .5;
-  border: 3px solid var(--blue);
-  border-radius: 15px 0 0 15px;
   box-shadow: 0 0 15px var(--blue);
 }
 
-.works h3 {
+ .main a {
+  text-decoration: none;
+ }
+
+.main img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+}
+
+.main h3 {
   position: relative;
-  display: flex;
-  width: 20%;
-  margin-left: 80%;
-  margin-top: -43px;
+  width:max-content;
+  margin-left:auto;
+  margin-top: -42px;
   margin-bottom: 16px;
   padding: 5px;
   border-radius: 15px 0 0 0;
@@ -152,52 +166,65 @@ header nav a {
   text-decoration: none;
   color: black;
   font-size: 1.8rem;
-  background-color: var(--blue);
+  opacity: 75%;
 }
 
-.small-card img{
-  height: 80px;
-  width: 75%;
-  margin-left: 25%;
+.icon {
+height: 100px;
+width: 66%;
+margin-left: 34%;
+margin-bottom: 50px;
+border-radius: 20px 0 0 20px;
+box-shadow: 0 0 15px var(--blue);
 }
 
-.small-card h3 {
+.icon a {
+  text-decoration: none;
+}
+
+.icon img {
+width: 100%;
+height: 100%;
+border-radius: 20px 0 0 20px;
+}
+
+.icon h3 {
+  position: relative;
+  width: max-content;
+  margin-left: auto;
+  margin-top: -35px;
+  margin-bottom: 16px;
+  padding: 5px;
+  border-radius: 15px 0 0 0;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
   font-size: 1.4rem;
-  width: 15%;
-  margin-left: 85%;
-  margin-top: -36px;
+  opacity: 85%;
 }
 
 .effects-card:hover {
   box-shadow: 0 0 25px var(--blue);
-  filter: blur(2px);
+  /* filter: blur(2px); */
 }
 
 footer {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 120px;
-  background-color: rgba(0, 0, 0, 0.63);
   height: 80px;
-  box-shadow: 0 0 7px rgba(187, 187, 187, 0.623);
 }
 
 footer div {
-  height: 60%;
-  width: 250px;
   color: var(--light);
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  font-size: 1.8rem;
+  font-size: 25px;
+  margin-left: 8px;
 }
 
 footer nav ul {
-  display: flex;
   align-items: center;
   min-width: 400px; 
-  background-color: var(--blue);
   border-radius: 15px 0 0 15px;
   padding: 10px;
   height: 50px;
@@ -207,4 +234,257 @@ footer nav ul {
 footer nav a {
   padding-right: 30px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  .about-me h2 {
+    background-color: blue;
+  }
+
+  .about-me {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+  }
+
+.about-me img {
+  display: flex;
+  border-radius: 20px;
+  float: none;
+  box-shadow: 0 0 7px rgba(187, 187, 187, 0.623);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-height: 400px;
+}
+
+.about-me h2 {
+  display: flex;
+  width: 100%;
+  border-radius: 0;
+}
+
+.about-me p {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  padding: 0;
+  margin: 30px;
+}
+
+.works {
+  width: 100%;
+  margin: 0;
+  margin-top: 50px;
+  border-radius: 0;
+}
+
+.works h2 {
+  display: flex;
+  width: 100%;
+  border-radius: 0;
+  margin: 30px 0px 30px 0px;
+}
+
+.main {
+  width: 90%;
+  margin: 0;
+  margin-left: 5%;
+  border-radius: 0;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.main img {
+  border-radius: 20px;
+}
+
+.main h3 {
+  width: 100%;
+  margin: 0;
+  border-radius: 0 0 20px 20px;
+  margin-top: -42px;
+}
+
+.grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.icon {
+  margin: 0px 10% 50px 10%;
+width: 80%;
+border-radius: 20px;
+height: 150px;
+}
+
+.icon img {
+  border-radius: 20px;
+}
+
+.icon h3{
+  width: 100%;
+  margin: 0;
+  border-radius: 0 0 20px 20px;
+  margin-top: -32px;
+  font-size: 1.2rem;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+
+  header{
+    flex-direction: column;
+    padding-bottom: 20px;
+    height: max-content;
+    padding: 0;
+  }
+
+  header .h-f-div {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 0;
+  }
+
+  header .dec {
+    border: 0;
+    border-bottom: 3px solid var(--light);
+    border-radius: 3px;
+    padding: 3px;
+  }
+
+  header h1{
+    padding: 8px;
+  }
+
+  header ul {
+    margin: 15px;
+  }
+
+  header nav a {
+    margin: 10px;
+  }
+
+  .about-me {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+  }
+
+.about-me img {
+  display: flex;
+  border-radius: 20px;
+  float: none;
+  box-shadow: 0 0 7px rgba(187, 187, 187, 0.623);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-height: 300px;
+}
+
+.about-me h2 {
+  display: flex;
+  width: 100%;
+  border-radius: 0;
+}
+
+.about-me p {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  padding: 0;
+  margin: 30px;
+}
+
+.works {
+  width: 100%;
+  margin: 0;
+  margin-top: 50px;
+  border-radius: 0;
+}
+
+.works h2 {
+  background-color: red;
+  display: flex;
+  width: 100%;
+  border-radius: 0;
+  margin: 30px 0px 30px 0px;
+}
+
+.main {
+  width: 90%;
+  margin: 0;
+  margin-left: 5%;
+  border-radius: 0;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.main img {
+  border-radius: 20px;
+}
+
+.main h3 {
+  width: 100%;
+  margin: 0;
+  border-radius: 0 0 20px 20px;
+  margin-top: -42px;
+}
+
+.grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.icon {
+  margin: 0px 10% 50px 10%;
+width: 80%;
+border-radius: 20px;
+}
+
+.icon img {
+  border-radius: 20px;
+}
+
+.icon h3{
+  width: 100%;
+  margin: 0;
+  border-radius: 0 0 20px 20px;
+  margin-top: -32px;
+  font-size: 1.2rem;
+}
+
+footer {
+  flex-direction: column;
+    padding-bottom: 20px;
+    height: max-content;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+
+footer .dec {
+  border: 0;
+  border-bottom: 3px solid var(--light);
+  border-radius: 3px;
+  padding: 0;
+}
+
+footer h2 {
+  margin: 20px 0 20px 0;
+}
+
+footer nav {
+  margin-bottom: 20px;
+  width: 100%;
+  
+}
+
+footer nav ul{
+  width: 100%;
+  justify-content: space-around;
+  border-radius: 0;
+}
+
 }
