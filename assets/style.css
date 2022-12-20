@@ -72,17 +72,11 @@ header nav a {
   margin: 2px;
 }
 
-.style:not(:focus):hover {
+.style:hover {
   transition: all 0.2s ease-in-out;
   background-color: var(--light);
   color: black;
   box-shadow: 0 0 10px rgba(187, 187, 187, 0.623);
-  /* border: 3px solid var(--light); */
-}
-
-.style:focus {
-background: none;
-border: none;
 }
 
 /* About Me */
