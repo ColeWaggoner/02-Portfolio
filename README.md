@@ -13,7 +13,7 @@ media queries, navigation bars, and more.
 
 ## Usage
 
-Open any web browser to [https://colewaggoner.github.io/challenge-02/](https://colewaggoner.github.io/portfolio/)
+Open any web browser to [https://colewaggoner.github.io/02-Portfolio/](https://colewaggoner.github.io/02-Portfolio/)
 
 
 ## Badges
